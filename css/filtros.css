@@ -1,0 +1,28 @@
+tr td{
+    border: 0;
+    background-color: white;
+}
+table{
+    background-color: white;
+}
+article img{
+    width: 30vw;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 0%;
+}
+.filtro1{
+    filter: blur(3px);
+}
+.filtro1:hover{
+    filter: none;
+}
+.filtro2{
+    filter: sepia(80%);
+}
+.filtro3{
+    filter: grayscale(100%);
+}
+.filtro4{
+    filter: saturate(140%);
+}

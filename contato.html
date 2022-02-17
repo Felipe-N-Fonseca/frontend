@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fale conosco</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+                <h1 align="center">CONTATO</h1>
+        </header>
+        <section>
+            <nav>
+                <h2>Outras páginas</h2>
+                <ul>
+                    <li><a href="./home-page.html">Home</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./formas-geometricas.html">Formas geométricas</a></li>
+                    <li><a href="./imagens-filtro.html">Imagens com filtro</a></li>
+                </ul>
+                <h2>Redes sociais</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/felipe_nas_fonseca/" target="_blank">instagram</a></li>
+                    <li><a href="https://github.com/flpente" target="_blank">github</a></li>
+                    <li><a href="https://www.shell.com.br/" target="_blank">Posto shell</a></li>
+                </ul>
+            </nav>
+            <article>
+                <center><h2>preencha o formulário e venha tomar um café</h2></center>
+                <form method="post"><!--tag para formularios, o metodo define pra onde os dados vão-->
+                    <div><!--divide elementos entre si-->
+                        <label for="nome">Nome:</label><!--o atributo for linka ele com o id-->
+                        <input type="text" name="nome" id="nome" placeholder="digite seu nome">
+                        <!--tag de entrada pelo usuario,  atributo placeholder adiciona um texto dentro-->
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="fulano@email.com">
+                        <!--só permite a entrada de emails-->
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" rows="5">digite a mensagem</textarea>
+                        <!--local para inserir um texto-->
+                    </div>
+                    <div>
+                        <label>qual linguagem você prefere: </label><!--escolha uma opção dentre todas-->
+                        <input type="radio" name="linguagens" checked> Python <br>
+                        <input type="radio" name="linguagens"> html <br>
+                        <input type="radio" name="linguagens"> php <br>
+                    </div>
+                    <div>
+                        <label>quais linguagens você conhece: </label><!--escolhe varias opções, value é o valor
+                        que será retornado para o back end-->
+                        <input type="checkbox" name="linguagens" value="python"> Python <br>
+                        <input type="checkbox" name="linguagens" value="html"> html <br>
+                        <input type="checkbox" name="linguagens" value="php"> php <br>
+                    </div>
+                    <div>
+                        <label>qual a cor do camaro amarelo: </label>
+                        <select>
+                            <option selected="">amarelo</option><!--deixa essa opção selecionada por padrão-->
+                            <option>azul</option>
+                            <option>preto</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" >
+                    </div>
+                </form>
+            </article>
+        </section>
+        <footer>
+            <h2>Desenvolvido por Felipe</h2>
+        </footer>
+    </body>
+</html>
